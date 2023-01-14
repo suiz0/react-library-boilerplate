@@ -1,2 +1,3 @@
 # react-library-boilerplate
-A boilerplate project to create react components
+
+A boilerplate project to create react component(s) library
