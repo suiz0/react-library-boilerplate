@@ -1,0 +1,14 @@
+$container-bgColor: #ccc;
+$child-bgColor: #eee;
+
+.my-component-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $container-bgColor;
+  padding: 5px 5px;
+}
+
+.my-component {
+  background-color: $child-bgColor;
+  padding: 5px;
+}

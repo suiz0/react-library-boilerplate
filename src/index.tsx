@@ -1,5 +1,6 @@
 import MyComponentContainer from "./MyComponentContainer";
 import { createRoot } from "react-dom/client";
+import "./styles/main.scss";
 
 const initialize = () => {
   const element = document.getElementById("root");
