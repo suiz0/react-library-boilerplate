@@ -1,11 +1,12 @@
 {
   "name": "react-library-boilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A boilerplate project to create react components",
-  "main": "index.js",
+  "main": "./build/my-lib.bundle.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.config.js",
+    "build": "rimraf build/** && npm run types:build && webpack --config webpack.prod.config.js",
     "build:dev": "webpack --config webpack.dev.config.js",
+    "types:build": "tsc",
     "start": "webpack serve --config webpack.dev.config.js --open"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "rimraf": "^5.0.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",

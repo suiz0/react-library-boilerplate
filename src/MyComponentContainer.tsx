@@ -1,9 +1,5 @@
 import MyComponent from "./MyComponent";
-
-export interface MyComponentProps {
-  title: string;
-  list?: string[];
-}
+import { MyComponentProps } from "./appTypes";
 
 const MyComponentContainer = (props: MyComponentProps) => {
   const { title, list } = props;

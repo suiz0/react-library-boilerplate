@@ -5,9 +5,10 @@ module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
   output: {
-    filename: "bundle.js",
+    filename: "my-lib.bundle.js",
     path: path.resolve(__dirname, "build"),
-    clean: true,
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   devtool: "eval",
   module: {
